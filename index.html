@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An electric vehicle market intelligence project exploring sales, manufacturers, battery technologies, range and sustainability through Tableau visualisations.">
+  <meta name="theme-color" content="#0b1220">
+  <title>EV Insights | Market Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EV Insights home">
+      <span class="brand-mark">⚡</span><span>EV <b>INSIGHTS</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#overview">Overview</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#scenarios">Scenarios</a>
+      <a href="#resources">Resources</a>
+      <a href="#demo">Demo video</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ELECTRIC MOBILITY · DATA · DECISIONS</div>
+        <h1>Driving the future<br><span>with data.</span></h1>
+        <p class="hero-text">Explore the electric vehicle market through sales, manufacturer performance, battery technologies, driving range and sustainability indicators.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Explore dashboard <span>↗</span></a>
+          <a class="button button-ghost" href="#resources">Project resources</a>
+        </div>
+        <div class="hero-note"><span class="dot"></span> Tableau-powered student project · EV Market Intelligence</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of an electric vehicle and analytics">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <div class="mini-stat stat-one"><span>MARKET</span><b>Sales & share</b><small>Compare categories</small></div>
+        <div class="mini-stat stat-two"><span>TECHNOLOGY</span><b>Battery insights</b><small>Range & capacity</small></div>
+        <div class="car-scene">
+          <div class="car-roof"></div><div class="car-body"><div class="car-window"></div><div class="car-light"></div></div>
+          <div class="wheel wheel-left"></div><div class="wheel wheel-right"></div>
+          <div class="road"></div>
+        </div>
+        <div class="visual-label">ELECTRIC · CONNECTED · SUSTAINABLE</div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Project coverage">
+      <div><strong>09</strong><span>Visualisations planned</span></div>
+      <div><strong>03</strong><span>Stakeholder scenarios</span></div>
+      <div><strong>01</strong><span>Unified project hub</span></div>
+      <div><strong>EV</strong><span>Market intelligence</span></div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="section-heading">
+        <div><div class="eyebrow">PROJECT OVERVIEW</div><h2>From market data to useful decisions.</h2></div>
+        <p>This project uses a supplied EV market dataset to explore the questions that matter to strategy leaders, business intelligence teams and sustainable-mobility researchers.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">↗</div><h3>Market performance</h3><p>Compare annual sales across vehicle categories and manufacturers to understand where the market is concentrated.</p><span class="tag">SALES & COMPETITION</span></article>
+        <article class="feature-card"><div class="feature-icon">◉</div><h3>Battery & range</h3><p>Explore battery technology mix, capacity and driving-range patterns across vehicle segments.</p><span class="tag">TECHNOLOGY</span></article>
+        <article class="feature-card"><div class="feature-icon">⌖</div><h3>Geography & impact</h3><p>Review manufacturing-country distribution, customer ratings and reported sustainability indicators.</p><span class="tag">LOCATION & SUSTAINABILITY</span></article>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+      <div class="section-heading">
+        <div><div class="eyebrow">INTERACTIVE ANALYTICS</div><h2>Explore the Tableau dashboard.</h2></div>
+        <p>Use the live embedded dashboard to interact with the published charts. If it does not load, open it directly on Tableau Public.</p>
+      </div>
+      <div class="dashboard-frame" id="dashboardFrame">
+        <div class="embed-placeholder" id="dashboardPlaceholder">
+          <div class="placeholder-icon">▥</div>
+          <h3>Connect your published Tableau dashboard</h3>
+          <p>Open <code>config.js</code> and replace <code>PASTE_TABLEAU_PUBLIC_URL_HERE</code> with your published Tableau Public view URL.</p>
+          <p class="small">Use the published dashboard URL, not the editing/workbook URL.</p>
+        </div>
+        <iframe id="tableauEmbed" title="Interactive EV Market Intelligence Tableau dashboard" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="dashboard-footer"><span>Best viewed on desktop or landscape tablet.</span><a id="tableauDirectLink" href="#" target="_blank" rel="noopener" hidden>Open dashboard on Tableau Public ↗</a></div>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="section-heading">
+        <div><div class="eyebrow">THREE STAKEHOLDER SCENARIOS</div><h2>One dataset. Three perspectives.</h2></div>
+        <p>The dashboard is designed to help each stakeholder investigate a different set of business and research questions.</p>
+      </div>
+      <div class="scenario-grid">
+        <article class="scenario-card"><div class="scenario-number">01 / STRATEGY</div><h3>Emily Johnson</h3><p class="role">EV Market Strategy Director</p><p>Identify high-performing vehicle categories, leading manufacturers, customer satisfaction patterns and promising battery technologies.</p><ul><li>Which categories lead in sales?</li><li>How does range vary by segment?</li><li>Where are growth opportunities?</li></ul></article>
+        <article class="scenario-card"><div class="scenario-number">02 / BUSINESS INTELLIGENCE</div><h3>David Chen</h3><p class="role">Automotive BI Manager</p><p>Compare manufacturer performance and production geography to support market-entry and positioning decisions.</p><ul><li>How is sales performance distributed?</li><li>Which battery types are common?</li><li>Which countries manufacture the vehicles?</li></ul></article>
+        <article class="scenario-card"><div class="scenario-number">03 / SUSTAINABILITY</div><h3>Dr. Sarah Williams</h3><p class="role">Sustainable Mobility Research Analyst</p><p>Investigate battery innovation, driving range, customer adoption indicators and reported environmental impact.</p><ul><li>How do battery types compare?</li><li>What range/capacity patterns appear?</li><li>How do sustainability indicators vary?</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section resource-section" id="resources">
+      <div class="section-heading">
+        <div><div class="eyebrow">PROJECT LIBRARY</div><h2>Reports and templates.</h2></div>
+        <p>Download the prepared project documents. Word versions are editable; PDF versions are suitable for reviewing and sharing.</p>
+      </div>
+      <div class="resource-toolbar">
+        <label class="search-box"><span>⌕</span><input id="resourceSearch" type="search" placeholder="Search project resources…" aria-label="Search project resources"></label>
+        <div class="resource-filters" role="group" aria-label="Filter resource type">
+          <button class="filter-button active" data-filter="all">All files</button>
+          <button class="filter-button" data-filter="pdf">PDF</button>
+          <button class="filter-button" data-filter="word">Word</button>
+        </div>
+      </div>
+      <div class="resource-grid" id="resourceGrid">
+        <article class="resource-card" data-type="pdf" data-title="Empathy Map"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Empathy Map</h3><p>Stakeholder needs and pain points</p><a href="downloads/pdf/Completed_01_Empathy_Map_EV_Dashboard.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Define Problem Statements"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Define Problem Statements</h3><p>Problem framing for the EV project</p><a href="downloads/pdf/Completed_02_Problem_Statements_EV_Dashboard.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Brainstorm Idea Prioritization"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Brainstorm & Idea Prioritization</h3><p>Potential ideas and prioritisation</p><a href="downloads/pdf/Completed_03_Brainstorm_Idea_Prioritization_EV_Dashboard.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Project Demo Planning"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Project Demo Planning</h3><p>Demo flow and chart walkthrough</p><a href="downloads/pdf/Project_Demo_Planning.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="Project Demo Planning"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>Project Demo Planning</h3><p>Editable Word document</p><a href="downloads/word/Project_Demo_Planning.docx" download>Download Word ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Communication"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Communication</h3><p>Project communication plan</p><a href="downloads/pdf/Communication.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="Communication"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>Communication</h3><p>Editable Word document</p><a href="downloads/word/Communication.docx" download>Download Word ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Demonstration of Proposed Features"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Demonstration of Proposed Features</h3><p>Planned features and verification</p><a href="downloads/pdf/Demonstration_of_Proposed_Features.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="Demonstration of Proposed Features"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>Demonstration of Proposed Features</h3><p>Editable Word document</p><a href="downloads/word/Demonstration_of_Proposed_Features.docx" download>Download Word ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Scalability Future Plan"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Scalability & Future Plan</h3><p>Limitations and possible next steps</p><a href="downloads/pdf/Scalability_Future_Plan.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="Scalability Future Plan"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>Scalability & Future Plan</h3><p>Editable Word document</p><a href="downloads/word/Scalability_Future_Plan.docx" download>Download Word ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="Team Involvement in Demonstration"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>Team Involvement in Demonstration</h3><p>Roles and contributions</p><a href="downloads/pdf/Team_Involvement_in_Demonstration.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="Team Involvement in Demonstration"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>Team Involvement in Demonstration</h3><p>Editable Word document</p><a href="downloads/word/Team_Involvement_in_Demonstration.docx" download>Download Word ↗</a></div></article>
+        <article class="resource-card" data-type="pdf" data-title="EV Market Intelligence Final Report"><div class="file-icon pdf">PDF</div><div class="resource-info"><h3>EV Market Intelligence Final Report</h3><p>Project report</p><a href="downloads/pdf/EV_Market_Intelligence_Final_Report.pdf" download>Download PDF ↗</a></div></article>
+        <article class="resource-card" data-type="word" data-title="EV Market Intelligence Final Report"><div class="file-icon word">DOCX</div><div class="resource-info"><h3>EV Market Intelligence Final Report</h3><p>Editable project report</p><a href="downloads/word/EV_Market_Intelligence_Final_Report.docx" download>Download Word ↗</a></div></article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No resources match your search.</p>
+    </section>
+
+    <section class="video-section" id="demo">
+      <div class="video-copy"><div class="eyebrow">PROJECT WALKTHROUGH</div><h2>See the story behind the charts.</h2><p>Watch the project demonstration to understand how each visualisation connects to the stakeholder scenarios and the questions being investigated.</p><a class="button button-primary" id="videoLink" href="#" target="_blank" rel="noopener" hidden>Watch demo video ↗</a><p id="videoPlaceholder" class="small">Add your public Google Drive video link in <code>config.js</code> to activate the video button.</p></div>
+      <div class="video-art"><div class="play-circle">▶</div><div class="video-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>EV MARKET · PROJECT DEMO</span></div>
+    </section>
+
+    <section class="closing-cta">
+      <div><div class="eyebrow">DATA-DRIVEN MOBILITY</div><h2>Better questions lead to better decisions.</h2><p>This project brings market performance, technology and sustainability indicators into one place.</p></div>
+      <a class="button button-primary" href="#dashboard">Return to dashboard ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">⚡</span><span>EV <b>INSIGHTS</b></span></a><p>EV Market Intelligence · Tableau visualisation project</p><span>Built for learning, analysis and project demonstration.</span></footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
